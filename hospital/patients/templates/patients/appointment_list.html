@@ -1,0 +1,3 @@
+{% for i in appointment%}
+<a href = "{% url 'patients:appointment_detail_view' forloop.counter %}" >{{i.patient.name}}</a><br> 
+{% endfor %}
