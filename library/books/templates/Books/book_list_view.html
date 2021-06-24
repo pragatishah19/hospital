@@ -1,0 +1,7 @@
+<h3>Book List:</h3>
+{% for i in books_list%}
+<a href = "{{i.get_absolute_url}}">{{i.name}}<br></a>
+{% comment %} and its Author is: {{i.author.name}}<br> {% endcomment %}
+{% endfor %}
+<br>
+<h3><a href = " {% url 'books:book_create_view' %}"> create new book </a></h3>

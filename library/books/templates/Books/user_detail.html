@@ -1,0 +1,14 @@
+
+<h2><lable> Name: </lable>
+    {{user.name}}<br></h2>
+<lable> Mobile Number: </lable>
+    {{user.mobile}}<br>
+<lable> Number of books taken: </lable>
+    {{user.no_of_books_taken}}<br>
+<lable> Book Names: </lable>
+{% for i in books %}
+{{i.name}},
+{% endfor %}
+{#{{user.books.all}}#}
+{#u can use index like this {{books.0.name}} #}
+
